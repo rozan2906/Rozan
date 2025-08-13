@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0020)http://volken.store/ -->
-<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volken Store</title>
     
@@ -2291,18 +2291,18 @@
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="sidebar-logo">
-                <img src="./Volken Store_files/image-2.png" alt="Nexus Logo" style="opacity: 1; transition: opacity 0.3s;">
+                <img src="https://i.ibb.co/7J9vM0zS/image-2.png" alt="Nexus Logo">
             </div>
             <h1 class="sidebar-title">Volken Store</h1>
             <p class="sidebar-subtitle">Website</p>
         </div>
 
         <nav class="sidebar-nav">
-            <button class="sidebar-nav-btn" onclick="showSection(&#39;home&#39;)">
+            <button class="sidebar-nav-btn active" onclick="showSection('home')">
                 <span class="icon">🏠</span>
                 الرئيسية
             </button>
-            <button class="sidebar-nav-btn" onclick="showSection(&#39;rules&#39;)">
+            <button class="sidebar-nav-btn" onclick="showSection('rules')">
                 <span class="icon">📋</span>
                 القوانين
             </button>
@@ -2318,7 +2318,7 @@
                 <span class="icon">🍽️</span>
                 محلات
             </button> -->
-            <button class="sidebar-nav-btn active" onclick="showSection(&#39;packages&#39;)">
+            <button class="sidebar-nav-btn" onclick="showSection('packages')">
                 <span class="icon">📦</span>
                 المنتجات
             </button>
@@ -2342,11 +2342,11 @@
                     <button class="close-cart" onclick="closeCart()">×</button>
                 </div>
                 
-                <div id="cart-items-container" class="cart-items" style="display: none;">
+                <div id="cart-items-container" class="cart-items">
                     <!-- Cart items will be populated here -->
                 </div>
                 
-                <div id="empty-cart" class="empty-cart" style="display: block;">
+                <div id="empty-cart" class="empty-cart">
                     <div class="empty-cart-icon">🛒</div>
                     <div class="empty-cart-message">السلة فارغة</div>
                     <div class="empty-cart-subtitle">أضف بعض المنتجات لتبدأ التسوق</div>
@@ -2414,11 +2414,11 @@
                     <h3>رفع الإيصال وإدخال البيانات</h3>
                     <div class="form-group">
                         <label for="receipt-upload">صورة إيصال التحويل *</label>
-                        <input type="file" id="receipt-upload" accept="image/*" required="">
+                        <input type="file" id="receipt-upload" accept="image/*" required>
                     </div>
                     <div class="form-group">
                         <label for="customer-name">الاسم الكامل *</label>
-                        <input type="text" id="customer-name" placeholder="أدخل اسمك الكامل" required="">
+                        <input type="text" id="customer-name" placeholder="أدخل اسمك الكامل" required>
                     </div>
 
                     <button class="submit-payment-btn" onclick="submitPayment()">إرسال الطلب</button>
@@ -2427,7 +2427,7 @@
         </div>
         
         <!-- Home Section -->
-        <div id="home" class="content-section">
+        <div id="home" class="content-section active">
             <div class="page-header">
                 <h1>مرحباً بك في Volken Store</h1>
             </div>
@@ -2447,7 +2447,7 @@
                     <div class="founders-grid">
                         <div class="founder-item">
                             <div class="founder-avatar">
-                                <img src="./Volken Store_files/2b247915ebdda9c53a46ee5b76ad7b4f.png" alt="YAMI Avatar" style="opacity: 1; transition: opacity 0.3s;">
+                                <img src="https://i.ibb.co/0VrhbQwZ/2b247915ebdda9c53a46ee5b76ad7b4f.png" alt="YAMI Avatar">
                             </div>
                             <div class="founder-info">
                                 <div class="founder-name">! 𝑫𝒂𝒓𝒌</div>
@@ -2456,7 +2456,7 @@
                         </div>
                         <div class="founder-item">
                             <div class="founder-avatar">
-                                <img src="./Volken Store_files/81b3cd27d089f9fa1840e834aa915fb4.webp" alt="_amdev Avatar" style="opacity: 1; transition: opacity 0.3s;">
+                                <img src="https://cdn.discordapp.com/avatars/1392623042860945603/81b3cd27d089f9fa1840e834aa915fb4.webp?size=128" alt="_amdev Avatar">
                             </div>
                             <div class="founder-info">
                                 <div class="founder-name">_amdev</div>
@@ -2531,7 +2531,7 @@
                         <a href="https://discord.gg/6r75nHtNnu" target="_blank" class="social-item">
                             <div class="social-icon">
                                 <svg viewBox="0 0 24 24" fill="white" style="width: 50px; height: 50px;">
-                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.865-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.191.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path>
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.865-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.191.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
                                 </svg>
                             </div>
                             <div class="social-name">الديسكورد</div>
@@ -2651,37 +2651,37 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/75a58b-Screenshot_7.png" alt="Nissan GTR" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://img.gta5-mods.com/q75/images/nissan-gtr-r35-add-on-tuning-extras-bodykits/75a58b-Screenshot_7.png" alt="Nissan GTR" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-title">نيسان GTR R35</h3>
                         <p class="product-description">سيارة GTR الأسطورية بتعديلات وبودي كيت حصري، أداء استثنائي وسرعة خيالية للسباقات المحترفة</p>
                         <div class="product-price">$14.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;نيسان GTR R35&#39;, 15, &#39;https://img.gta5-mods.com/q75/images/nissan-gtr-r35-add-on-tuning-extras-bodykits/75a58b-Screenshot_7.png&#39;)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('نيسان GTR R35', 15, 'https://img.gta5-mods.com/q75/images/nissan-gtr-r35-add-on-tuning-extras-bodykits/75a58b-Screenshot_7.png')">أضف للسلة</button>
                     </div>
                 </div>
                 
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/3504c4-QQ截图20210316174633.png" alt="Brabus G-Class" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://img.gta5-mods.com/q75/images/brabus-g-class-g800/3504c4-QQ%E6%88%AA%E5%9B%BE20210316174633.png" alt="Brabus G-Class" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-title">برابوس جي كلاس G800</h3>
                         <p class="product-description">سيارة فاخرة من برابوس بقوة 800 حصان، تجمع بين الفخامة والأداء العالي والتصميم المميز</p>
                         <div class="product-price">$14.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;برابوس جي كلاس G800&#39;, 15, &#39;https://img.gta5-mods.com/q75/images/brabus-g-class-g800/3504c4-QQ%E6%88%AA%E5%9B%BE20210316174633.png&#39;)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('برابوس جي كلاس G800', 15, 'https://img.gta5-mods.com/q75/images/brabus-g-class-g800/3504c4-QQ%E6%88%AA%E5%9B%BE20210316174633.png')">أضف للسلة</button>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/29f3f6-170Street.png" alt="Dodge Charger Demon 170" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://img.gta5-mods.com/q75/images/dodge-charger-demon-170-street-fivem-addon/29f3f6-170Street.png" alt="Dodge Charger Demon 170" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-title">دودج تشارجر ديمون 170</h3>
                         <p class="product-description">أقوى سيارة عضلية على الإطلاق بقوة 1025 حصان، مصممة لسحق الشوارع والمضامير</p>
                         <div class="product-price">$14.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;دودج تشارجر ديمون 170&#39;, 15, &#39;https://img.gta5-mods.com/q75/images/dodge-charger-demon-170-street-fivem-addon/29f3f6-170Street.png&#39;)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('دودج تشارجر ديمون 170', 15, 'https://img.gta5-mods.com/q75/images/dodge-charger-demon-170-street-fivem-addon/29f3f6-170Street.png')">أضف للسلة</button>
                     </div>
                 </div>
 
@@ -2704,25 +2704,25 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/j8WtJh.jpg" alt="Snr.Buns" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.snipboard.io/j8WtJh.jpg" alt="Snr.Buns" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-title">Snr.Buns</h3>
                         <p class="product-description">مطعم عصري للوجبات السريعة مع معدات حديثة وموقع استراتيجي ممتاز في قلب المدينة</p>
                         <div class="product-price">$24.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Snr.Buns&#39;, 25)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('Snr.Buns', 25)">أضف للسلة</button>
                     </div>
                 </div>
                 
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/0Zzy3F.jpg" alt="Weapon Store" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.snipboard.io/0Zzy3F.jpg" alt="Weapon Store" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <h3 class="product-title">Weapon Store</h3>
                         <p class="product-description">محل اسلحة يقدم افضل الاسلحة في المدينة Nexus</p>
                         <div class="product-price">$29.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Weapon Store&#39;, 30)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('Weapon Store', 30)">أضف للسلة</button>
                     </div>
                 </div>
             </div>
@@ -2730,7 +2730,7 @@
         </div>
 
         <!-- Packages Section -->
-        <div id="packages" class="content-section active">
+        <div id="packages" class="content-section">
             <div class="page-header">
                 <h1>المنتجات</h1>
                 <p>اختر المنتج المناسب لك </p>
@@ -2741,50 +2741,50 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/da.png" alt="Discord Boosts" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.ibb.co/ZzGDmvT1/da.png" alt="Discord Boosts" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <div class="product-icon">🛒</div>
                         <h3 class="product-title">Discord Boosts</h3>
                         <p class="product-description"> في حال تم الدفع تواصل مع مسؤول المتجر عبر الديسكورد </p>
                         <div class="product-price">$11.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Discord Boosts&#39;, 12)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('Discord Boosts', 12)">أضف للسلة</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/da.png" alt="Discord Boosts" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.ibb.co/ZzGDmvT1/da.png" alt="Discord Boosts" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <div class="product-icon">🛒</div>
                         <h3 class="product-title">14x Server Boosts ( 0-3 month )   </h3>
                         <p class="product-description">البوستات من ( 1-90 ) على الاقل ( 7 ايام )</p>
-                        <div class="product-price">$15.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Discord Boosts&#39;, 11)">أضف للسلة</button>
+                        <div class="product-price">$10.99</div>
+                        <button class="buy-btn" onclick="addToCart('Discord Boosts', 11)">أضف للسلة</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/daf.png" alt="Discord Boosts" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.ibb.co/dsvqh7K1/daf.png" alt="Discord Boosts" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <div class="product-icon">🛒</div>
                         <h3 class="product-title">1000 Online Discord Members</h3>
                         <p class="product-description"> تبي 1000+ عضو في سيرفرك اطلب الان عند Volken Store</p>
                         <div class="product-price">$5.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Discord Boosts&#39;, 6)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('Discord Boosts', 6)">أضف للسلة</button>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-card-image">
-                        <img src="./Volken Store_files/daf.png" alt="Discord Boosts" class="car-image" style="opacity: 1; transition: opacity 0.3s;">
+                        <img src="https://i.ibb.co/dsvqh7K1/daf.png" alt="Discord Boosts" class="car-image">
                     </div>
                     <div class="product-card-content">
                         <div class="product-icon">🛒</div>
                         <h3 class="product-title">1000 Offline Discord Members</h3>
                         <p class="product-description"> تبي 1000+ عضو في سيرفرك اطلب الان عند Volken Store</p>
                         <div class="product-price">$3.99</div>
-                        <button class="buy-btn" onclick="addToCart(&#39;Discord Boosts&#39;, 4)">أضف للسلة</button>
+                        <button class="buy-btn" onclick="addToCart('Discord Boosts', 4)">أضف للسلة</button>
                     </div>
                 </div>
                 
@@ -2794,10 +2794,9 @@
         </div>
         </div>
     </div>
+</body>
+
+</html>
 
 
 
-
-
-
-</body></html>
